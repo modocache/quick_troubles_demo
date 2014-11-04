@@ -15,6 +15,7 @@
 		6F3483081A09886B00C02A8B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3482F21A09884F00C02A8B /* Quick.framework */; };
 		6F3483091A09886F00C02A8B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3483051A09885700C02A8B /* Nimble.framework */; };
 		6F34830B1A0988E300C02A8B /* QuickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F34830A1A0988E300C02A8B /* QuickTests.m */; };
+		DA4A061B1A0997E700E778D2 /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A061A1A0997E700E778D2 /* SwiftSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		6F3482E91A09884E00C02A8B /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = ../../Vendor/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		6F3482F91A09885700C02A8B /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../../Vendor/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		6F34830A1A0988E300C02A8B /* QuickTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickTests.m; sourceTree = "<group>"; };
+		DA4A061A1A0997E700E778D2 /* SwiftSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				6F3482DF1A0986FC00C02A8B /* QuickTroblesDemoTests.m */,
 				6F34830A1A0988E300C02A8B /* QuickTests.m */,
 				6F3482DD1A0986FC00C02A8B /* Supporting Files */,
+				DA4A061A1A0997E700E778D2 /* SwiftSpec.swift */,
 			);
 			path = QuickTroblesDemoTests;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4A061B1A0997E700E778D2 /* SwiftSpec.swift in Sources */,
 				6F3482E01A0986FC00C02A8B /* QuickTroblesDemoTests.m in Sources */,
 				6F34830B1A0988E300C02A8B /* QuickTests.m in Sources */,
 			);
@@ -505,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -517,6 +522,7 @@
 				INFOPLIST_FILE = QuickTroblesDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickTroblesDemo.app/Contents/MacOS/QuickTroblesDemo";
 			};
 			name = Debug;
@@ -525,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -556,6 +563,7 @@
 				6F3482E51A0986FC00C02A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F3482E61A0986FC00C02A8B /* Build configuration list for PBXNativeTarget "QuickTroblesDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +572,7 @@
 				6F3482E81A0986FC00C02A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
